@@ -4,11 +4,3 @@
   margin-right: auto;
   position: relative;
 }
-#square {
-  width: 100px;
-  height: 100px;
-  background-color: #ff6666;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
