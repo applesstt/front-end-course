@@ -15,12 +15,10 @@
       <li>star-item标示星星 图片对应image/star.png image/star-sel.png</li>
       <li>star-item-1 至 star-item-5 用于区分1-5颗星星</li>
       <li>例：star-3 用于显示当前分数为3分 即star-item-1至star-item-3为黄色星星 star-item-4、star-item-5为灰色星星</li>
-      <!--
       <li>增加交互功能</li>
       <li>修改代码为公用组件形式</li>
-      -->
     </ol>
-    <div id="star" class="star-box star-3">
+    <div id="star" class="star-box star-3 clearfix">
       <em class="star-item star-item-1"></em>
       <em class="star-item star-item-2"></em>
       <em class="star-item star-item-3"></em>
@@ -30,5 +28,16 @@
   </div>
 </body>
 <script>
+$(function() {
+  $('.star-item').hover(function() {
+    for(var i = 0; i < 5; i++) {
+      var index = i + 1;
+      if($(this).hasClass('star-item-' + index)) {
+        $(this).parent().removeClass('star-1 star-2 star-3 star-4 star-5').addClass('star-' + index);
+        break;
+      }
+    }
+  });
+})
 </script>
 </html>

@@ -11,7 +11,7 @@
     <h1>方块运动</h1>
     <ol>
       <li>红色方块沿横向从左到右做匀速运动</li>
-      <li>整个过程移动880px像素</li>
+      <li>整个过程移动860px像素</li>
       <li>运动过程流畅</li>
       <!--
       <li>修改运动为加速度运动 S = 0.5 * a * t * t</li>
@@ -20,5 +20,28 @@
     </ol>
     <div id="square"></div>
   </div>
+<script>
+var a = 2;
+var t = 0; //当前进度step
+var v0 = 50;
+var currentLeft = $('#square').css('left');
+var maxLeft = 860;
+var interval;
+var run = function() {
+  t++;
+  var left = v0 * t;
+  var top = 0.5 * a * t * t;
+  if(left > maxLeft) {
+    left = maxLeft;
+    clearInterval(interval);
+    t = 0;
+    $('#square').css('left', 0).css('top', 0);
+    interval = setInterval(run, 30);
+  } else {
+    $('#square').css('left', left).css('top', top);
+  }
+}
+interval = setInterval(run, 30);
+</script>
 </body>
 </html>

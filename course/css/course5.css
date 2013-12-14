@@ -1,25 +1,27 @@
 .star-box {}
 
-.star-item {}
+.star-item {
+  background: url(../image/star.png) no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+}
 
 .star-1 .star-item-1,
-
 .star-2 .star-item-1,
 .star-2 .star-item-2,
-
 .star-3 .star-item-1,
 .star-3 .star-item-2,
 .star-3 .star-item-3,
-
 .star-4 .star-item-1,
 .star-4 .star-item-2,
 .star-4 .star-item-3,
 .star-4 .star-item-4,
-
 .star-5 .star-item-1,
 .star-5 .star-item-2,
 .star-5 .star-item-3,
 .star-5 .star-item-4,
 .star-5 .star-item-5 {
-
+  background: url(../image/star-sel.png) no-repeat 0 0;
 }
