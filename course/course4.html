@@ -12,16 +12,26 @@
     <ol>
       <li>进度条整体背景为灰色 对应process-box</li>
       <li>process以百分比的形式表示进度 颜色为红色</li>
-      <!--
-      <li>制作动态效果</li>
+      <li>制作动态效果 红色进度条从0开始至90% 运动一秒钟</li>
       <li>修改代码为公用组件形式</li>
-      -->
     </ol>
     <div class="process-box">
-      <div class="process" style="width:90%;"></div>
+      <div class="process" process="90"></div>
     </div>
   </div>
 </body>
 <script>
+var curIndex = 0; //当前进度step
+var time = 5; //seconed
+var allStep = time * 25;
+var processPercent = $('.process').attr('process');
+var interval;
+var run = function() {
+  curIndex++;
+  if(curIndex + 1 == allStep) clearInterval(interval);
+  var width = (curIndex * processPercent / allStep) + '%';
+  $('.process').css('width', width);
+}
+interval = setInterval(run, time / allStep);
 </script>
 </html>
