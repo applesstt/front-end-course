@@ -1,0 +1,38 @@
+.button {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    cursor: pointer;
+
+}
+.button.gray-button {
+    height: 32px;
+    outline: none;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.green-button {
+    color: #FFF;
+    border: 1px solid #6BA604;
+    background-color: #72C311;
+}
+
+.gray-button {
+    color: #666;
+    border: 1px solid #D0D0D0;
+    background-color: #EEE;
+}
+
+.orange-button {
+    color: #666;
+    border: 1px solid #E25E25;
+    background: url(../image/course10/orange-btn-bg.png);
+}
