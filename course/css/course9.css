@@ -2,3 +2,18 @@
   background-color: #c76151;
   padding: 20px;
 }
+.add-icon, .del-icon {
+  padding-left: 46px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 36px;
+  height: 36px;
+  display: block;
+  font-size: 24px;
+}
+.add-icon {
+  background: url(../image/course9/add-icon.png) no-repeat 0 50%;
+}
+.del-icon {
+  background: url(../image/course9/del-icon.png) no-repeat 0 50%;
+}
