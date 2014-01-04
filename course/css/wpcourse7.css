@@ -1,0 +1,185 @@
+*{margin: 0;padding: 0;}
+
+.cross-wrap {
+    width: 100%;
+    height: 40px;
+    background: url(../image/course7/nav-bg.png) repeat-x 0 0;
+}
+
+.nav-box {
+    width: 960px;
+    height: 40px;
+    margin: 0px;
+    float: left;
+}
+
+.nav-category {
+    width: 200px;
+    height: 40px;
+    float: left;
+}
+
+.nav-category:hover .nav-category-list {
+    display: block;
+}
+
+.nav-category-top {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-category-top:hover {
+    text-decoration: underline;
+}
+
+.nav-category-top b {
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    background: url(../image/course7/down-arrow.png) no-repeat 0 18px;
+}
+
+.nav-category-top:hover b{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    background: url(../image/course7/up-arrow.png) no-repeat 0 18px;
+}
+
+.nav-category-list {
+    width: 196px;
+    border: 2px solid #E4393C;
+    border-top: none;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.nav-category-list:hover {
+    border-right: none;
+}
+
+.nav-category-list:hover .nav-category-content{
+    border-left: none;
+}
+
+.nav-category-list a {
+    width: 179px;
+    height: 38px;
+    line-height: 40px;
+    color: #000;
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 15px;
+    border: 1px solid #FFF;
+    background: #FAFAFA url(../image/course7/dot.png) no-repeat 5px 18px;
+}
+
+.nav-category-list a:hover {
+    background-color: #FFF;
+}
+
+.nav-category-list a b {
+    width: 10px;
+    height: 40px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    background: url(../image/course7/category-right-arrow.png) no-repeat 0 18px;
+}
+
+.nav-category-list a:hover b {
+    background: none;
+}
+
+.nav-category-content {
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    left: 196px;
+    display: none;
+    border: 1px solid #CCC;
+}
+
+.nav-category-content-row {
+    margin-left: 10px;
+    width: 680px;
+    height: 42px;
+    border-bottom: 1px solid #CCC;
+}
+
+.nav-category-content-row .content-title {
+    color: #E4393C;
+    text-decoration: underline;
+}
+
+.nav-category-content-row span a:hover {
+    color: #E4393C;
+    text-decoration: underline;
+}
+.nav-category-content-row a {
+    display: block;
+    float: left;
+    width: 85px;
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+    line-height: 40px;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-category-content-row b {
+    display: block;
+    float: left;
+    width: 2px;
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+    line-height: 40px;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav-category-list-1:hover .nav-category-content {
+    display: block;
+}
+
+.nav-category-list a:hover .nav-category-content {
+    display: block;
+}
+
+.nav-item {
+    width:  100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-item-sel,
+.nav-item:hover {
+    cursor: pointer;
+    background: url(../image/course7/nav-sel-bg.png) repeat-x 0 0;;
+}
