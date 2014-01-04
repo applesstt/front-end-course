@@ -1,171 +1,187 @@
-.nav-bg {
-    background: url("../image/course7/nav-bg.png");
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-box{
+
+}
+
+.nav-item-set{
+
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
     height: 40px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: white;
 }
 
-.cross-wrap {
-    width: 100%;
+.nav-item:hover{
+    background-image: url("../image/course7/nav-sel-bg.png");
 }
 
-.nav-box {
-
-}
-
-.nav-item {
-    height: 40px;
-    width: 80px;
-    float: left;
+.nav-bg{
     line-height: 40px;
-    text-align: center;
-    text-decoration: none;
+    height: 40px;
+    background-image: url("../image/course7/nav-bg.png");
+}
+
+.nav-category{
+    display: inline;
+    float: left;
+}
+
+
+.nav-category:hover .nav-category-content{
+
     display: block;
-    color: #ffffff;
+    border: solid 2px #c76151;
+    border-top: 0px;
 }
 
-.nav-item:hover,
-.nav-item-self{
-    background: url("../image/course7/dot.png");
+.nav-category:hover b{
+    background-image: url("../image/course7/down-arrow.png");
+
 }
 
-.nav-category {
-    width: 180px;
+.nav-category-top{
     position: relative;
-    float: left;
-}
+    padding-left: 20px;
+    padding-right: 40px;
 
-.nav-category:hover .nav-category-list {
-    display: block;
 }
-
-.nav-category:hover .nav-category-top b {
-    background: url("../image/course7/up-arrow.png") no-repeat;
-    display: block;
-    width: 20px;
-    height: 20px;
-    right: 10px;
-    top: 20px;
-    position: absolute;
-}
-
-.nav-category-top {
-    height: 40px;
-    line-height: 40px;
-    text-decoration: none;
-    display: block;
-    color: #ffffff;
-    padding-left: 10px;
-}
-
 .nav-category-top b {
-    background: url("../image/course7/down-arrow.png") no-repeat;
+    background: url("../image/course7/up-arrow.png") no-repeat 0 50%;
+    width: 7px;
+    height: 40px;
     display: block;
-    width: 20px;
-    height: 20px;
-    right: 10px;
-    top: 20px;
     position: absolute;
+    top: 0px;
+    right: 20px;
+}
+.nav-category-list:hover .nav-category-second-list-content{
+    display: block;
+
 }
 
-.nav-category-list {
-    border: 2px solid #c76151;
-    width: 176px;
+.nav-category-second-list-content{
     display: none;
-    position: absolute;
-}
-
-.list-category {
-}
-
-.list-category:hover .nav-category-second-list{
-    display: block;
-}
-
-.one-list-category{
-    background-color: #fffff5;
-    padding: 0 20px;
-    border-bottom: 1px solid #d0d0d0;
-    display: block;
-    line-height: 40px;
-    text-decoration: none;
+    padding-right: 40px;
+    padding-left: 20px;
+    border-bottom: solid 1px #d0d0d0;
     position: relative;
 }
-
-.one-list-category:hover {
-    background-color: #ffffff;
-    z-index: 200;
+.nav-category-second-list-content a{
+    display: inline-table;
+    padding-left: 40px;
+}
+.third-list-left{
+    border-left: solid 1px blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
 }
 
-.one-list-category:hover .right-arrow {
+
+.nav-category-second-list a{
     display: none;
 }
 
-.right-arrow {
-    background: url("../image/course7/category-right-arrow.png") no-repeat;
-    position: absolute;
-    top: 18px;
-    width: 20px;
-    height: 20px;
-    right: 4px;
-    display: block;
+.nav-category-second-list-top{
+    position: relative;
+    padding-left: 40px;
+}
+.nav-category-second-list-top:hover{
+    background: #fcf;
+}
+.nav-category-list:hover .after-second-list{
+    display: none;
+
 }
 
-.dot {
-    background: url("../image/course7/dot.png") no-repeat;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    left: 12px;
-    display: block;
-}
 
-.nav-category-second-list {
-    background-color: #ffffff;
-    border: 2px solid #d0d0d0;
+.nav-category-list:hover .nav-category-second-list-content{
+    display: block;
     position: absolute;
-    width: 400px;
+    left: 145px;
+    top: 40px;
+    background: #fcf;
     height: 400px;
-    left: 174px;
-    top: 0px;
-    display: none;
-    padding: 0 20px;
-    z-index: 100;
+    width: 500px;
 }
 
-.nav-category-second-list a p {
-    display: block;
-    float: left;
-    padding: 0 6px;
-}
-
-.third_category {
-    border-bottom: 1px #d0d0d0 solid;
-    line-height: 40px;
-    display: block;
+.after-second-list {
+    background: url("../image/course7/category-right-arrow.png") no-repeat 0 50%;
+    width: 7px;
     height: 40px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 40px;
 }
 
-.third_category_content {
-    padding: 0 10px;
+.before-second-list {
+    background: url("../image/course7/dot.png") no-repeat 0 50%;
+    width: 7px;
+    height: 40px;
     display: block;
-    float: left;
-    text-decoration: none;
-    color: #d0d0d0;
+    position: absolute;
+    top: 0px;
+    left: 20px;
 }
 
-.third_category_content:hover,
-.third_category_title {
-    text-decoration: #ff0000;
+.nav-category-list:hover .nav-category-second-list-top{
+    background: #fcf;
+}
+
+.nav-category-content{
+    display: none;
+}
+
+
+.nav-category-third-list-bg{
+    display: none;
+    background: lightgray;
+    width: 500px;
+    height: 400px;
+}
+.nav-category-list:hover .nav-category-third-list-bg{
     display: block;
-    float: left;
-    padding: 0 10px;
+    position: absolute;
+    left: 145px;
+    top: 40px;
+}
+
+
+.nav-category-second-list:hover .nav-category-third-list{
+    display: block;
+    position: absolute;
+    left: 145px;
+    width: 500px;
+    height: 400px;
+    top: 0px;
+}
+
+
+.nav-category-second-list:hover .after-second-list{
+    display: none;
+}
+.nav-category-third-list-top{
+    left: 0;
+    color: blue;
+    display: inline;
+}
+.nav-category-third-list-content{
+    display: inline;
+    float: right;
+    width: 460px;
+    text-decoration-line: underline;
+}
+.nav-category-third-list-content a:hover{
     color: #ff0000;
 }
-
-
-
-
-
-
-
 
