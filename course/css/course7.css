@@ -131,6 +131,11 @@
     display: block;
     position: absolute;
     top: 0px;
+    *top: 10px;
+    _top: 20px;
+    +top: 30px;
+    top: 40px\9;
+    top: 50px !important;
     left: 20px;
 }
 
