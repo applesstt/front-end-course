@@ -1,0 +1,9 @@
+.btn {
+  height: 30px;
+  border: 1px;
+}
+
+button.btn {
+  outline: none;
+  height: 32px;
+}
