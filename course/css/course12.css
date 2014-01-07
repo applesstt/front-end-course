@@ -1,13 +1,14 @@
 * {
-  font: 12px/18px;
+  font: 12px;
+  line-height: 18px;
 }
 
 .f16 {
   font-size: 16px;
 }
 
-.f20 {
-  font-size: 20px;
+.f24 {
+  font-size: 24px;
 }
 
 .item {
