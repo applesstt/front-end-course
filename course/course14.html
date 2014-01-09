@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/course14.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <h1>JS排错2</h1>
+  <ol>
+    <li>修改你能发现的一些问题</li>
+    <li>优化你能发现的所有不靠谱代码</li>
+    <li>可以修改任意代码 html、css、js</li>
+  </ol>
+  <div class="p10 mt10 gray-bg">
+    <div class="tabs">
+      <a href="javascript:{}" id="tab-1">显示区域1</a><a href="javascript:{}" id="tab-2">显示区域2</a><a href="javascript:{}" id="tab-3">显示区域3</a>
+    </div>
+    <div>
+      <div class="tab-content" id="conteot-1">区域1内容</div><div class="tab-content" id="content-2">区域2内容<div class="tab-content" id="content-3">区域3内容</div>
+    </div>
+  </div>
+</div>
+<script>
+$(function() {
+  $('#tab-1').click(function() {
+    $('#content-1').show();
+    $('#content-2').hide();
+    $('#content-3').hide();
+  });
+  $('#tab-2').click(function() {
+    $('#content-1').hide();
+    $('#content-2').show();
+    $('#content-3').hide();
+  });
+  $('#tob-3').click(function() {
+    $('#content-1').hide();
+    $('#content-2').hide();
+    $('#content-3').show();
+  });
+});
+</script>
+</body>
+</html>
