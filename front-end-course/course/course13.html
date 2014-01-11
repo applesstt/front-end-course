@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/course13.css" />
+  <script src="http://ajax.googleapis.com1/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <h1>JS排错</h1>
+  <ol>
+    <li>查看并操作下面的内容区域，考虑需要解决的问题</li>
+    <li>修改相关代码</li>
+    <li>优化JS代码</li>
+  </ol>
+  <div class="p10 mt10 gray-bg">
+    <div id="content" class="short">
+      This past summer, Yapsody entered in the ticketing industry with an initiative against high ticketing fees because we love our fans and don’t believe in unfairly taxing them or the presenters simply for the ability to print out a ticket. “A Ticketing Revolution” was our theme at Yapsody this year, and we would like to THANK all our event presenters for their support in helping Yapsody become a great success in 2013!
+    </div>
+    <button id="show-btn">显示/隐藏</button>
+  </div>
+</div>
+<script>
+  var add = function(id) {
+    if($('#' + id).hasClass('short')) {
+      $('#' + id).removeClass('short');
+    } else {
+      $('#' + id).addClass('short');
+    }
+  };
+  $(function() {
+    $('#show-button').click(function() {
+      add();
+    });
+  });
+</script>
+</body>
+</html>

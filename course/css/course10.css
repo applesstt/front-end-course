@@ -1,9 +1,28 @@
 .btn {
-  height: 30px;
-  border: 1px;
+    display: block;
+   border: 1px;
+   border-radius: 3px;
+   height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-button.btn {
-  outline: none;
-  height: 32px;
+.green-btn {
+   background-color:#72c311 ;
+   color:#ffffff;
+    border-color: #6ba604;
+}
+.gray-btn {
+    background-color:#d0d0d0 ;
+    color:#eeeeee;
+    border-color: #666666;
+}
+/*<li>橙色按钮：边框颜色#e25a25 背景图片course10/orange-btn-bg.pg 文字颜色#666666</li>*/
+
+.or-btn {
+    background: url(../image/course10/orange-btn-bg.png);
+    color:#666666;
+    border-color: #e25a25;
 }

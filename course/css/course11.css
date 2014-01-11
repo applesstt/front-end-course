@@ -1,0 +1,17 @@
+.border{
+    border-width:3px;
+    border-style:solid;
+    border-color:gainsboro
+}
+
+.border-bottom{
+    border-width:3px;
+    border-bottom-style:solid;
+    border-color:gainsboro
+}
+
+.border-right{
+    border-width:3px;
+    border-right-style:solid;
+    border-color:gainsboro
+}

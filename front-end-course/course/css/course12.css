@@ -1,0 +1,26 @@
+* {
+  font: 12px;
+  line-height: 18px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.item {
+  float: left;
+  width: 175px;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  display: block;
+  background-color: #ff6666;
+}
+
+.item:hover {
+  border: 1px solid #000000;
+}
