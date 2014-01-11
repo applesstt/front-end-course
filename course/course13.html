@@ -22,12 +22,9 @@
   </div>
 </div>
 <script>
-  var add = function(id) {
-    $('#' + id).toggleClass('short');
-  };
   $(function() {
     $('#show-btn').click(function() {
-      add('content');
+      $('#content').toggleClass('short');
     });
   });
 </script>
