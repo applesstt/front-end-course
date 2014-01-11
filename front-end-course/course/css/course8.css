@@ -1,0 +1,28 @@
+.search-wrap {
+    border: 2px solid #ff6600;
+    width: 480px;
+    height: 30px;
+    background-color: #ff6600;
+}
+
+.search-input {
+    border: 0;
+    width: 396px;
+    height: 30px;
+    float: left;
+    display: block;
+    padding: 0 2px;
+}
+
+.search-btn {
+    border: 0px;
+    width: 80px;
+    height: 30px;
+    background-color: #ff6600;
+    float: left;
+    display: block;
+    padding: 0px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+}

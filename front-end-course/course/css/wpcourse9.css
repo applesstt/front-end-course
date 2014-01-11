@@ -1,0 +1,22 @@
+.action-bg {
+    background-color: #c76151;
+    padding: 20px;
+}
+
+.icon {
+    height: 40px;
+    display: block;
+    padding-left: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.add-icon {
+    background: url(../image/course9/add-icon.png) no-repeat 0 0;
+}
+
+.del-icon {
+    background: url(../image/course9/del-icon.png) no-repeat 0 0;
+}
