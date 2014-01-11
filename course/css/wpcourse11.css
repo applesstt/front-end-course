@@ -1,0 +1,108 @@
+.content-wrap {
+    width: 960px;
+    height: 1556px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-content {
+    width: 640px;
+    height: 1500px;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.left-content .experience-topic {
+    width: 620px;
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-content .experience {
+    width: 320px;
+    height: 270px;
+    border-right: 1px solid #ccc;
+}
+
+.left-content .topic {
+    width: 270px;
+    height: 270px;
+    float: left;
+}
+
+.left-content .discover {
+    width: 620px;
+    height: 230px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-content .skill {
+    width: 620px;
+    height: 230px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-content .ad {
+    width: 620px;
+    height: 100px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-content .road-photo {
+    width: 620px;
+    height: 320px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right-content {
+    width: 280px;
+    height: 1500px;
+    float: left;
+    margin-left: 20px;
+}
+
+.right-content .news {
+    width: 270px;
+    height: 270px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right-content .observation {
+    width: 270px;
+    height: 290px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right-content .walker {
+    width: 270px;
+    height: 290px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right-content .evaluation-equipment {
+    width: 270px;
+    height: 210px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right-content .evaluation {
+    width: 134px;
+    height: 146px;
+    border-right: 1px solid #ccc;
+}
+
+.right-content .equipment-kg {
+    width: 130px;
+    height: 180px;
+    float: left;
+}
+
+.right-content .handbook {
+    width: 270px;
+    height: 260px;
+    border-bottom: 1px solid #ccc;
+}
