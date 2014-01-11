@@ -16,30 +16,23 @@
   </ol>
   <div class="p10 mt10 gray-bg">
     <div class="tabs">
-      <a href="javascript:{}" id="tab-1">显示区域1</a><a href="javascript:{}" id="tab-2">显示区域2</a><a href="javascript:{}" id="tab-3">显示区域3</a>
+      <a href="javascript:{}" id="tab-1">显示区域1</a>
+      <a href="javascript:{}" id="tab-2">显示区域2</a>
+      <a href="javascript:{}" id="tab-3">显示区域3</a>
     </div>
     <div>
-      <div class="tab-content" id="conteot-1">区域1内容</div><div class="tab-content" id="content-2">区域2内容<div class="tab-content" id="content-3">区域3内容</div>
+      <div class="tab-content" id="content-tab-1">区域1内容</div>
+      <div class="tab-content" id="content-tab-2">区域2内容</div>
+      <div class="tab-content" id="content-tab-3">区域3内容</div>
     </div>
   </div>
 </div>
 <script>
 $(function() {
-  $('#tab-1').click(function() {
-    $('#content-1').show();
-    $('#content-2').hide();
-    $('#content-3').hide();
-  });
-  $('#tab-2').click(function() {
-    $('#content-1').hide();
-    $('#content-2').show();
-    $('#content-3').hide();
-  });
-  $('#tob-3').click(function() {
-    $('#content-1').hide();
-    $('#content-2').hide();
-    $('#content-3').show();
-  });
+    $('.tabs a').click(function () {
+        $('.tab-content').hide();
+        $('#content-' + $(this).attr('id')).show();
+    });
 });
 </script>
 </body>
