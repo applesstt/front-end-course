@@ -24,6 +24,12 @@
     border-right: 1px solid #ccc;
 }
 
+.left-content .topic {
+    width: 270px;
+    height: 270px;
+    float: left;
+}
+
 .left-content .discover {
     width: 620px;
     height: 230px;
@@ -87,6 +93,12 @@
     width: 134px;
     height: 146px;
     border-right: 1px solid #ccc;
+}
+
+.right-content .equipment-kg {
+    width: 130px;
+    height: 180px;
+    float: left;
 }
 
 .right-content .handbook {
