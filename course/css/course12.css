@@ -5,15 +5,18 @@
 
 .f16 {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .f24 {
   font-size: 24px;
+  line-height:36px;
 }
 
 .item {
   float: left;
   width: 175px;
+  height: 112px;
   padding: 20px;
   margin: 10px;
   border: none;
@@ -23,4 +26,10 @@
 
 .item:hover {
   border: 1px solid #000000;
+  margin: 9px;
+}
+a.f24 {
+  width: 195px;
+  height: 132px;
+  padding:10px;
 }

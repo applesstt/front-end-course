@@ -1,0 +1,124 @@
+.bottom-line {
+    border-bottom: solid darkgray 1px;
+}
+.bottom-dotted-line {
+    border-bottom: dotted darkgray 1px;
+}
+.border-line {
+    border: solid darkgray 1px;
+}
+.right-line {
+    border-right: solid darkgray 1px;
+}
+.wrap {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.up-content {
+    height: 345px;
+}
+.image-show {
+    width: 700px;
+    height: 345px;
+}
+.create-nav {
+    width: 230px;
+}
+.note-create-nav {
+    height: 112px;
+}
+.equipment-create-nav {
+    height: 112px;
+}
+.collect-draft-note {
+    height: 60px;
+}
+.down-left {
+    width: 620px;
+}
+.down-right {
+    width: 268px;
+}
+.experience-up ,.experience-down{
+    width: 318px;
+    height: 95px;
+}
+.special {
+    width: 268px;
+    height: 270px;
+}
+.discovery-voyage {
+    height: 196px;
+}
+.skill {
+    height: 200px;
+}
+.adventure {
+    height: 80px;
+}
+.camera {
+    height: 266px;
+}
+.equipment-show {
+    height: 218px;
+}
+.consultation {
+    height: 240px;
+}
+.observer {
+    height: 237px;
+}
+.walker {
+    width: 268px;
+    height: 260px;
+}
+.evaluation-manual {
+    width: 268px;
+    height: 176px;
+}
+.evaluation {
+    width: 134px;
+}
+.equipment-normal {
+    width: 134px;
+}
+.travel-manual {
+    height: 236px;
+}
+.activity {
+    height: 104px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.pb40 {
+    padding-bottom: 40px;
+}
+.p20-0 {
+    padding: 20px 0;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pr20 {
+    padding-right: 20px;
+}
+.pb25 {
+    padding-bottom: 25px;
+}
+.pb30 {
+    padding-bottom: 30px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.left {
+    float: left;
+}
+.mt26 {
+    margin-top: 26px;
+}
+.mt36 {
+    margin-top: 36px;
+}
