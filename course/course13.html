@@ -22,16 +22,10 @@
   </div>
 </div>
 <script>
-  var add = function(id) {
-    if($('#' + id).hasClass('short')) {
-      $('#' + id).removeClass('short');
-    } else {
-      $('#' + id).addClass('short');
-    }
-  };
   $(function() {
     $('#show-btn').click(function() {
       add('content');
+      $('#content').toggleClass('short');
     });
   });
 </script>
