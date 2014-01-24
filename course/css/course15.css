@@ -103,11 +103,21 @@
   overflow: hidden;
   cursor: pointer;
 }
-.time-line-add-content {
-  background: url(../image/course15/add-content.png) no-repeat 50% 50%;
+.time-line-add-inner {
   width: 22px;
   height: 89px;
   position: absolute;
   top: 5px;
   display: none;
+}
+.time-line-add-icon {
+  background: url(../image/course15/add.png) no-repeat 50% 0;
+  width: 22px;
+  height: 11px;
+
+}
+.time-line-add-content {
+  background: url(../image/course15/add-content.png) no-repeat 50% 3px;
+  width: 22px;
+  height: 78px;
 }
