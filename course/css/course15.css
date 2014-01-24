@@ -1,0 +1,113 @@
+.time-line {
+  width: 900px;
+}
+
+.drag-left, .drag-right {
+  width: 30px;
+  height: 115px;
+  float: left;
+  cursor: pointer;
+  display: block;
+  visibility: hidden;
+}
+.drag-left {
+  background: url(../image/course15/left-btn.png) no-repeat 50% 20px;
+}
+.drag-right {
+  background: url(../image/course15/right-btn.png) no-repeat 50% 20px;
+}
+
+.time-line-box {
+  float: left;
+  width: 840px;
+  height: 115px;
+  background: url(../image/course15/line.png) repeat-x 50% 22px;
+  position: relative;
+  overflow: hidden;
+}
+.time-line-inner {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.time-line-item {
+  background: #ffffff url(../image/course15/dot.png) no-repeat 50% 50%;
+  width: 17px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  float: left;
+  cursor: pointer;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+.time-line-first {
+  margin-left: 50px;
+}
+.time-line-current {
+  background: #ffffff url(../image/course15/location.png) no-repeat 50% 50%;
+  width: 17px;
+  height: 20px;
+}
+
+.time-line-name {
+  position: absolute;
+  width: 160px;
+  top: -20px;
+  left: -71px;
+  text-align: center;
+}
+
+.time-line-circle, .time-line-action {
+  position: absolute;
+  top: 22px;
+  left: -9px;
+  cursor: pointer;
+  overflow: visible;
+}
+.time-line-circle {
+  background: url(../image/course15/circle-default.png) no-repeat 50% 50%;
+}
+.time-line-current .time-line-circle {
+  background: url(../image/course15/circle-current.png) no-repeat 50% 50%;
+}
+.time-line-date {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.time-line-del {
+  background: url(../image/course15/del.png) no-repeat 50% 50%;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  display: none;
+}
+.time-line-circle:hover {
+  background: url(../image/course15/circle-action.png) no-repeat 50% 50%;
+  color: #ffffff;
+}
+.time-line-circle:hover .time-line-del {
+  display: block;
+}
+
+.time-line-add {
+  width: 142px;
+  height: 94px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.time-line-add-content {
+  background: url(../image/course15/add-content.png) no-repeat 50% 50%;
+  width: 22px;
+  height: 89px;
+  position: absolute;
+  top: 5px;
+  display: none;
+}
