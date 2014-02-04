@@ -7,13 +7,30 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-<div class="wrap">
-  <h1>布局</h1>
-  <ol>
-    <li>参照hipandora.com首页 构造页面区块的布局</li>
-    <li>从轮播图的下方开始 至 关于我们的上方结束</li>
-    <li>使用灰色边框 用于区隔各个模块</li>
-  </ol>
+<div class="wrap clearfix">
+    <div class="page-left clearfix">
+        <div class="page-left-sub-content">
+            <div class="experience-area"></div>
+            <div class="special-topic-area"></div>
+        </div>
+        <div class="page-left-sub-content"></div>
+        <div class="page-left-sub-content"></div>
+        <div class="page-left-sub-content"></div>
+        <div class="page-left-sub-content-mini"></div>
+        <div class="page-left-sub-content-without-border-bottom "></div>
+    </div>
+
+    <div class="page-right clearfix">
+        <div class="page-right-sub-content"></div>
+        <div class="page-right-sub-content"></div>
+        <div class="page-right-sub-content"></div>
+        <div class="page-right-sub-content page-right-sub-content-padding-top">
+            <div class="try-area"></div>
+            <div class="equipment-knowledge-area"></div>
+        </div>
+        <div class="page-right-sub-content"></div>
+        <div class="page-right-sub-content-mini"></div>
+    </div>
 </div>
 </body>
 </html>
