@@ -1,49 +1,49 @@
 front-end-course
 ================
 
-##\u5165\u95E8\u7EA7
-   * html\u57FA\u672C\u7ED3\u6784
-   * CSS\u4ECB\u7ECD
-   * div\u3001a\u3001img\u3001table
-   * font\u3001color\u3001background\u3001width\u3001height\u3001line-height\u3001display\u3001:hover...
-   * table\u4F7F\u7528
-   * \u76D2\u6A21\u578B
-   * \u5E26icon\u7684\u64CD\u4F5C\uFF08\u589E\u3001\u5220\u3001\u6539\u3001\u67E5\uFF09 - course9
-   * \u5236\u4F5C\u6309\u94AE - course10
-   * \u5E26\u8FB9\u6846\u7684\u56FE\u7247 - course1
+##入门级
+   * html基本结构
+   * CSS介绍
+   * div、a、img、table
+   * font、color、background、width、height、line-height、display、:hover...
+   * table使用
+   * 盒模型
+   * 带icon的操作（增、删、改、查） - course9
+   * 制作按钮 - course10
+   * 带边框的图片 - course1
 
-###\u5408\u683C\u6807\u51C6
-   * \u63CF\u8FF0html\u7684\u7ED3\u6784
-   * \u6E05\u695ACSS\u7684\u7528\u5904\u53CA\u4E66\u5199\u65B9\u5F0F
-   * \u4E86\u89E3\u57FA\u672C\u6807\u7B7E\u7684\u542B\u4E49\u3001\u80FD\u591F\u7B80\u5355\u4F7F\u7528\u5404\u6807\u7B7E
-   * \u80FD\u591F\u5199\u51FA\u57FA\u7840\u7684\u6837\u5F0F
-   * \u80FD\u591F\u4E66\u5199\u57FA\u672C\u7684\u8868\u683C \u5E76\u4F7F\u7528\u8868\u683C\u8FDB\u884C\u5E03\u5C40
-   * \u6E05\u695A\u76D2\u6A21\u578B\u4E2D\u5404\u79CD\u5C5E\u6027
+###合格标准
+   * 描述html的结构
+   * 清楚CSS的用处及书写方式
+   * 了解基本标签的含义、能够简单使用各标签
+   * 能够写出基础的样式
+   * 能够书写基本的表格 并使用表格进行布局
+   * 清楚盒模型中各种属性
 ***
 
-##\u8FDB\u9636\u7EA7
-   * float\uFF08clearfix\uFF09 - course2
-   * \u4F7F\u7528div\u8BBE\u7F6E\u9875\u9762\u5E03\u5C40 - course11
+##进阶级
+   * float（clearfix） - course2
+   * 使用div设置页面布局 - course11
    * position
-   * \u641C\u7D22\u6846\u5236\u4F5C - course8
-   * \u9F20\u6807\u6ED1\u8FC7\uFF08\u6837\u5F0F\u53D8\u5316\uFF09
-   * \u4E24\u7EA7\u5BFC\u822A\u83DC\u5355\u5236\u4F5C - course3
-   * \u52A8\u6001\u8FDB\u5EA6\u6761 - course4
+   * 搜索框制作 - course8
+   * 鼠标滑过（样式变化）
+   * 两级导航菜单制作 - course3
+   * 动态进度条 - course4
 
-###\u5408\u683C\u6807\u51C6\uFF1A
-   * \u7075\u6D3B\u7684\u4F7F\u7528div\u5E03\u5C40\u9875\u9762
-   * \u5341\u5206\u6E05\u695Aposition\u7684\u6982\u5FF5 \u5E76\u80FD\u591F\u8F7B\u6613\u5B9E\u73B0\u5404\u7C7B\u5B9A\u4F4D\u7684\u9700\u6C42
-   * \u5236\u4F5C\u5E38\u89C1\u7684\u57FA\u672C\u529F\u80FD
+###合格标准：
+   * 灵活的使用div布局页面
+   * 十分清楚position的概念 并能够轻易实现各类定位的需求
+   * 制作常见的基本功能
 ***
 
-##\u5E94\u7528\u7EA7
-   * \u7269\u4F53\u5300\u901F\u3001\u52A0\u901F\u3001\u53D8\u901F\u8FD0\u52A8 - course6
-   * \u4E94\u661F\u8BC4\u5206\u5236\u4F5C - course5
-   * \u4E09\u7EA7\u5BFC\u822A\u83DC\u5355 - course7
-   * slider\u5E7B\u706F
-   * \u65F6\u95F4\u8F74\u7EC4\u4EF6 - course15
+##应用级
+   * 物体匀速、加速、变速运动 - course6
+   * 五星评分制作 - course5
+   * 三级导航菜单 - course7
+   * slider幻灯
+   * 时间轴组件 - course15
 
-###\u5408\u683C\u6807\u51C6\uFF1A
-   * \u7075\u6D3B\u4F7F\u7528\u6240\u638C\u63E1\u7684\u77E5\u8BC6\uFF0C\u5904\u7406\u8F83\u590D\u6742\u7684\u95EE\u9898
-   * \u5F00\u53D1\u524D\uFF0C\u80FD\u591F\u8BC4\u4F30\u529F\u80FD\u7684\u53EF\u5B9E\u73B0\u6027\uFF0C\u9884\u6D4B\u53EF\u80FD\u51FA\u73B0\u7684\u6280\u672F\u74F6\u9888
+###合格标准：
+   * 灵活使用所掌握的知识，处理较复杂的问题
+   * 开发前，能够评估功能的可实现性，预测可能出现的技术瓶颈
 ***
