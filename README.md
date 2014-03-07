@@ -25,7 +25,7 @@ front-end-course
 ##进阶级
    * float（clearfix） - course2
    * 使用div设置页面布局 - course11
-   * position
+   * position - position
    * 搜索框制作 - course8
    * 鼠标滑过（样式变化）
    * 两级导航菜单制作 - course3
