@@ -1,5 +1,6 @@
 .tab-box {
   border: 1px solid #cccccc;
+  position: relative;
 }
 .tabs {
   height: 30px;
@@ -74,4 +75,24 @@
 .foot a {
   display: block;
   float: left;
+}
+.goods {
+  margin-bottom: 300px;
+}
+.good {
+  border: 1px solid #cccccc;
+  float: left;
+  width: 600px;
+}
+.good-content {
+  height: 100px;
+  background-color: #ff6666;
+}
+.good-more {
+  height: 50px;
+  display: none;
+  background-color: #66ff66;
+}
+.good:hover .good-more {
+  display: block;
 }
