@@ -96,3 +96,37 @@
 .good:hover .good-more {
   display: block;
 }
+
+.tab-new {
+  background: url(../image/tab/tab.png) no-repeat 0 0;
+  width: 94px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  font-size: 12px;
+}
+.tab-new b {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: none;
+  background: url(../image/tab/tab_close.png) no-repeat 0 0;
+  width: 7px;
+  height: 7px;
+}
+.tab-new:hover b {
+  display: block;
+}
+.jh-wrap {
+  position: relative;
+}
+.jh {
+  background: url(../image/jh.gif) no-repeat 0 0;
+  width: 123px;
+  height: 104px;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
