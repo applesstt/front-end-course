@@ -24,16 +24,51 @@
   <p>
     <h2>制作两个链接 链接文字为：编辑、删除 文字的左侧显示一个小图标 编辑对应的图标：image/html2/edit.png 删除对应的图标：image/html2/del.png</h2>
     <h3>评分：实现且代码合理简洁(5) 功能实现(3) 未完全实现(1)</h3>
-    <div>code here...</div>
+    <div>
+      <style type="text/css">
+        .edit {
+          background: url(image/html2/edit.png) no-repeat 0 50%;
+          padding-left: 14px;
+        }
+        .del {
+          background: url(image/html2/del.png) no-repeat 0 50%;
+          padding-left: 14px;
+        }
+      </style>
+      <a href='javascript:{}' class="edit">编辑</a>
+      <a href='javascript:{}' class="del">删除</a>
+    </div>
   </p>
   <p>
     <h2>制作一段文字 红色背景 白色文字，鼠标点击这段文字后 背景变为绿色</h2>
     <h3>评分：实现且代码合理简洁(5) 功能实现(3) 未完全实现(1)</h3>
-    <div>code here...</div>
+    <style type="text/css">
+      .red_bg {
+        background-color: #ff6666;
+        color: #ffffff;
+      }
+      .green_bg {
+        background-color: #66ff66;
+        color: #ffffff;
+      }
+    </style>
+    <script>
+      var changeBg = function() {
+        $('#changeBox').removeClass('red_bg').addClass('green_bg');
+      }
+    </script>
+    <div id="changeBox" class="red_bg" onclick="changeBg()">
+      Hello world！
+    </div>
   </p>
   <p>
     <h2>制作一个登录表单 表单内容包括用户名、密码、登录按钮 提交方式为post</h2>
-    <div>code here...</div>
+    <div>
+      <form>
+        <input />
+        <button>提交</button>
+      </form>
+    </div>
     <h2>在上面的表单中 增加功能。当点击登录按钮后，判断用户名是否为空，为空弹出提示：“用户名/密码不能为空”，如果不为空，正常提交表单</h2>
     <h3>评分：实现且代码合理简洁(5) 功能实现(3) 未完全实现(1)</h3>
     <div>code here</div>

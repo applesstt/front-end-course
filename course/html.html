@@ -26,10 +26,42 @@
   我是一张图片 图片位置：../image/course1/img.png<br/>
   我是一张背景图片 图片位置：../image/course1/img.png<br/>
   我是一行文字 距离上方100px 距离左侧50px<br/>
-  我是一个100px高的区域 文字大小30px 文字只有一行 并且左右以及垂直居中<br/>
+
+  <style type='text/css'>
+    .mid {
+      height: 100px;
+      line-height: 100px;
+      font-size: 30px;
+      text-align: center;
+      background-color: #ff6666;
+    }
+  </style>
+  <div class="mid">
+    我是一个100px高的区域 文字大小30px 文字只有一行 并且左右以及垂直居中
+  </div>
+
   请制作一个5行3列的表格 包括一行表头 内容随意<br/>
-  我是一段背景为红色的文字 鼠标划过我 背景将变为蓝色<br/>
-  点击我 弹出一个提示框 提示内容：Hello world！<br/>
+
+  <style>
+    .login_tip {
+      background-color: #ff6666;
+    }
+    .login_tip:hover {
+      background-color: #6666ff;
+    }
+  </style>
+  <div class="login_tip">
+    我是一段背景为红色的文字 鼠标划过我 背景将变为蓝色
+  </div>
+
+  <script>
+    var popWin = function() {
+      alert('Hello world!');
+    };
+  </script>
+  <div onclick="popWin()">
+    点击我 弹出一个提示框 提示内容：Hello world！
+  </div>
 </div>
 </body>
 </html>
