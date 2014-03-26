@@ -12,3 +12,15 @@
 .box-content {
   padding: 10px;
 }
+
+.pop-bg {
+  background-color: #000000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pop {
+  background-color: #ffffff;
+  padding: 50px 100px;
+}
