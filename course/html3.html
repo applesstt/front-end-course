@@ -15,11 +15,41 @@
 <div class="p10">
   <p>
     <h2>请制作一个div区域 宽度960px 横向居中 高度200px 背景颜色#ff3333</h2>
-    <div>code here...</div>
+    <div>
+      <style type="text/css">
+        .w960 {
+          width: 960px;
+          height: 200px;
+          background-color: #ff3333;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+      <div class="w960"></div>
+    </div>
   </p>
   <p>
     <h2>制作一个横向居中的960px宽的div 其中包括左右两个子div 左侧宽度200px 右侧760px 左右设置不同的背景色加以区分 高度都是200px</h2>
-    <div>code here...</div>
+    <div>
+      <style type="text/css">
+        .l200 {
+          float: left;
+          width: 200px;
+          height: 200px;
+          background-color: #ff3333;
+        }
+        .r760 {
+          float: right;
+          width: 760px;
+          height: 200px;
+          background-color: #33ff33;
+        }
+      </style>
+      <div class="w960 clearfix">
+        <div class="l200"></div>
+        <div class="r760"></div>
+      </div>
+    </div>
   </p>
   <p>
     <h2>使用table制作一个8行6列的表格 包含一行thead头部区域背景为灰色 奇数行背景色白色 偶数行背景灰色 </h2>
@@ -31,8 +61,14 @@
       <li>为图片增加灰色边框 1px宽 颜色#666666</li>
       <li>边框与图片有2px宽的间隙</li>
     </ol>
+    <style>
+      .border_img {
+        border: 5px solid #ff3333;
+        padding: 20px;
+      }
+    </style>
     <div class="mt10">
-      <img src="image/course1/img.png" />
+      <img class="border_img" src="image/course1/img.png" />
     </div>
     <div>code here...</div>
   </p>
