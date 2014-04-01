@@ -3,7 +3,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/base.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
@@ -36,6 +35,77 @@
     <p>
       <img src="image/demo/line.png" />
     </p>
+    <style>
+      .line-wrap {
+        overflow: hidden;
+      }
+      .line {
+      }
+      .line-nav {
+        float: left;
+        width: 60px;
+        background: url(image/base/line-bg.png) repeat-y 28px 0;
+        margin-bottom: -10000px;
+        padding-bottom: 10000px;
+      }
+      .line-circle {
+        width: 58px;
+        height: 58px;
+        border-radius: 30px;
+        border: 1px solid #00B7FF;
+        background-color: #ffffff;
+        line-height: 58px;
+        text-align: center;
+      }
+      .line-content {
+        float: left;
+        width: 500px;
+        margin-bottom: -10000px;
+        padding-bottom: 10000px;
+      }
+      .line-content-title {}
+      .line-content-des {}
+    </style>
+    <div class="line-wrap">
+      <div class="line clearfix">
+        <div class="line-nav">
+          <div class="line-circle">第一天</div>
+        </div>
+        <div class="line-content">
+          <a href="javascript:{}" class="line-content-title">
+            圣地亚哥
+          </a>
+          <div class="line-content-des">
+            洛杉矶 - 圣地亚哥<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+            121英里<br>
+          </div>
+        </div>
+      </div>
+      <div class="line clearfix">
+        <div class="line-nav">
+          <div class="line-circle">第二天</div>
+        </div>
+        <div class="line-content">
+          <a href="javascript:{}" class="line-content-title">
+            圣地亚哥
+          </a>
+          <div class="line-content-des">
+            洛杉矶 - 圣地亚哥<br>
+            121英里<br>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
     <h2>3.请快速实现下图所示的效果</h2>
@@ -50,6 +120,42 @@
     <div>
       <img src="image/demo/tab-box.png" />
     </div>
+    <style type="text/css">
+      .box {
+        border: 1px solid #cccccc;
+        width: 600px;
+        margin: 0 auto;
+      }
+      .box-tabs {
+        background-color: #eeeeee;
+
+      }
+      .box-tabs a {
+        display: block;
+        float: left;
+      }
+      .box-tabs a:hover, .box-tab-sel {
+        background-color: #ffffff;
+        border-right: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        border-top: 2px solid #ff3333;
+        margin-top: -4px;
+        margin-left: -1px;
+        padding-top: 4px;
+      }
+      .box-content {
+        padding: 10px;
+      }
+    </style>
+    <div class="box">
+      <div class="box-tabs clearfix">
+        <a href="javascript:{}" class="">标签1</a>
+        <a href="javascript:{}" class="box-tab-sel">标签2</a>
+      </div>
+      <div class="box-content">
+        test test test test test
+      </div>
+    </div>
   </div>
   <div>
     <h2>5.请快速实现下图所示的效果</h2>
@@ -63,12 +169,21 @@
     <h2>6.请快速实现下图所示的效果</h2>
     <h3>评分：t <= 12分钟（7）   12 < t <= 15 (3)   15 < t <= 20 (1)   20 < t (0) </h3>
     <h4>相关图标：image/base/shai.png(17px * 20px)、image/base/quotation.png(34px * 24px)</h4>
+    <h4>图片地址：image/base/shai-img.jpg(100px * 100px)</h4>
     <div>
       <img src="image/demo/mini-good.png" />
     </div>
   </div>
   <div>
     <h2>7.请制作一个500*300的白色背景弹出框 同时使用一个黑色50%透明度的遮罩层做为背景 将页面的其他部分遮罩</h2>
+  </div>
+  <div>
+    <h2>
+      8. 请在第五题的基础上 将鼠标划过的效果修改为动画形式 即鼠标划过时 红色箭头平滑的移动到当前的选项
+    </h2>
+    <h3>
+      具体效果请参考京东首页下方的各类别选择
+    </h3>
   </div>
 </body>
 </html>
