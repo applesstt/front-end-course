@@ -24,5 +24,31 @@
       <img src="image/demo/tab.png" />
     </p>
   </div>
+<script>
+  var Process = (function() {
+    var name, sex, year;
+    this.postStep1 = function() {
+      _checkName();
+      _checkSex();
+    }
+    var _postStep2 = function() {
+      var _curS
+    };
+    var init = function() {
+
+    };
+    var getParam = function() {
+      return {
+        name: name,
+        sex: sex,
+        year: year
+      };
+    };
+    return {
+      init: init,
+      getParam: getParam
+    }
+  }).call(this);
+</script>
 </body>
 </html>
