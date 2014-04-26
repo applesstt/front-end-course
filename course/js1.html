@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/common.css" />
+  <script src="http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    var str = ['<div>','hello','</div>'].join('');
+    var check = function() {
+      var username = $('#username').val();
+      if($.trim(username) === '') {
+        return false;
+      }
+      return true;
+    }
+    var Dialog = function() {
+      var open = function(config) {
+        document.write('<div class="dialog"><div class="dialog-title"></div></div>')
+      };
+      return {
+        open: open
+      }
+    };
+
+    $('#popup').click(
+      Dialog.open({
+        width: 500,
+        height: 300,
+        title: '这是个弹框',
+        content: '<div class="pop">hello world</div>'
+      })
+    );
+  </script>
+</head>
+<body>
+  <form method="post" onsubmit="return check()">
+    <input id="username" class="ipt" />
+    <button id="popup">弹框</button>
+    <button type="submit">提交</button>
+  </form>
+</body>
+</html>
