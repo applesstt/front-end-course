@@ -5,18 +5,74 @@
   <link rel="stylesheet" href="css/common.css" />
   <script src="http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   <script>
-    var str = ['<div>','hello','</div>'].join('');
-    var check = function() {
-      var username = $('#username').val();
-      if($.trim(username) === '') {
-        return false;
+    var dialog1 = DialogContainer.addAndGetDialog();
+    var dialog2 = DialogContainer.addAndGetDialog();
+
+    dialog1.open();
+    dialog2.open();
+
+    var DialogContainer = function() {
+      var dialogList = [];
+      var index = 1;
+      var addDialog = function() {
+        var dialog = new Dialog(index);
+        index++;
+        dialogList.push(dialog);
+        return dialog;
       }
-      return true;
-    }
-    var Dialog = function() {
+      return {
+        addAndGetDialog: addDialog
+      }
+    }();
+    var Dialog = function(index, config) {
+      var width = 400;
+      var height = 300;
+      var title = 'dialog';
+      var content = '';
+      var _baseHtml = [
+      '<div id="dialog_' + index + '">',
+        '<div class="dialog_model"></div>',
+        '<div class="dialog" style="width:{width};height:{height}">',
+          '<div class="dialog_close">×</div>',
+          '<div class="dialog_title">{title}</div>',
+          '<div class="dialog_content">{content}</div>',
+        '</div>',
+      '</div>'].join('');
+
+      var _initConfig = function(config) {
+        width = config.width || width;
+        height = config.height || height;
+        title = config.title || title;
+        content = config.content || content;
+      }
+
+      var _getTmp = function(html, data) {
+        for(var k in data) {
+          html.replace('{' + k + '}', data.k);
+        }
+        return html;
+      }
+
+      var _getDialogHtml = function() {
+        var baseHtml = _baseHtml.slice(0);
+        baseHtml = _getTmp(baseHtml, {
+          title: title,
+          content: content,
+          width: width,
+          height: height
+        });
+        return baseHtml;
+      }
+
+      var _popUp = function() {
+        $('body').append(_getDialogHtml());
+      }
+
       var open = function(config) {
-        document.write('<div class="dialog"><div class="dialog-title"></div></div>')
-      };
+        _initConfig(config);
+        _popUp();
+      }
+
       return {
         open: open
       }
