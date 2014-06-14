@@ -86,23 +86,61 @@
         var rows = rows || 3;
         var cols = cols || 3;
         var contentHtml = '', colsHtml = '';
+        var table = document.createElement('table');
+        var tbody = document.createElement('tbody');
         for(var i = 0; i < rows; i++) {
-          colsHtml = '';
+          //colsHtml = '';
+          var _tr = document.createElement('tr');
           for(var j = 0; j < cols; j++) {
-            colsHtml += '<td>' + i + '-' + j + '</td>';
+            var _td = document.createElement('td');
+            _td.innerHTML = i + '-' + j;
+            _tr.appendChild(_td);
+            _tr.style.backgroundColor = (i % 2 == 0) ? '#6f6' : '#66f';
+            //colsHtml += '<td>' + i + '-' + j + '</td>';
           }
-          contentHtml += '<tr>' + colsHtml + '</tr>';
+          _tr.addEventListener("mouseenter", function() {
+            this.style.backgroundColor = '#f66';
+          }, false);
+
+          _tr.addEventListener("mouseout", function() {
+            this.style.backgroundColor = '#ff6';
+          }, false);
+
+          tbody.appendChild(_tr);
+          //contentHtml += '<tr>' + colsHtml + '</tr>';
         }
-        var html = '<table><tbody>' + contentHtml
-          '</tbody></table>';
-        document.getElementById(id).innerHTML = html;
+        table.appendChild(tbody);
+
+        //var html = '<table><tbody>' + contentHtml +
+        //  '</tbody></table>';
+        //document.getElementById(id).innerHTML = html;
+        document.getElementById(id).appendChild(table);
 
       };
       return {
         init: init
       }
     }();
-    CreateTable.init('show-table', 1000, 10);
+    CreateTable.init('show-table', 5, 4);
+
+
+    // var table = document.createElement('table);
+    // var tbody = document.createElement('tbody');
+
+    // var td = document.createElement('td');
+    // td.innerHTML = 'hello world';
+    // var tr = document.createElement('tr');
+    // tr.appendChild(td);
+    // tr.style.backgroundColor = '#66ff66';
+    // tbody.appendChild(tr);
+
+    // table.appendChild(tbody);
+    // document.getElementById('xxId').appendChild(table);
+
+//    _tr.addEventListener("mouseover|mouseout", function() {
+//      console.log(this);
+//    }, false)
+
   </script>
   <div>
     <h2>
