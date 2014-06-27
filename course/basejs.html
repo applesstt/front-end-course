@@ -163,52 +163,12 @@
     <h3>使用input制作一个输入区域</h3>
     <h3>焦点在input中的时候，显示下拉列表</h3>
     <h3>鼠标点击下拉选项 选中相关内容到input内</h3>
-    <style type="text/css">
-      .hack_select {
-        position: relative;
-        width: 108px;
-        height: 28px;
-        overflow: visible;
-      }
-      .hack_select_input {
-        position: absolute;
-        height: 20px;
-        width: 100px;
-        line-height: 20px;
-        padding: 3px;
-        border: 1px solid #6666ff;
-        left: 0;
-        top: 0;
-      }
-      ul.hack_select_options {
-        position: absolute;
-        left: 0;
-        top: 28px;
-        display: none;
-      }
-      .hack_select:hover ul.hack_select_options {
-        display: block;
-      }
-      ul.hack_select_options li {
-        height: 20px;
-        width: 100px;
-        padding: 4px;
-        list-style: none;
-        line-height: 20px;
-        background-color: #eeeeee;
-      }
-      ul.hack_select_options li:hover {
-        background-color: #dddddd;
-      }
-    </style>
-    <div class="hack_select">
-      <input type="text" class="hack_select_input" />
-      <ul class="hack_select_options">
-        <li>小学</li>
-        <li>中学</li>
-        <li>大学</li>
-      </ul>
-    </div>
+    <h3>下拉列表最多显示5项内容</h3>
+    <h3>例如输入a 显示a开头的列表项</h3>
+
+      //_input.addEventListener('focus', function() {});
+      //_input.addEventListener('blur', function() {});
+      //$('.hack_select_input').get(0)
     <div style="padding:300px;background-color:#336633;">test</div>
   </div>
 </body>
