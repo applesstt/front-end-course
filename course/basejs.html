@@ -142,11 +142,31 @@
 //    }, false)
 
   </script>
-  <div>
+  <div id='wrapTable'>
+    <table>
+      <tbody>
+        <tr><td>1</td><td>11</td><td>111</td></tr>
+        <tr><td>2</td><td>22</td><td>222</td></tr>
+        <tr><td>3</td><td>33</td><td>333</td></tr>
+      </tbody>
+    </table>
     <h2>
       5. 使用js动态创建一个3行3列的布局的表格
 
-      innerHTML
+      var data = [[1,2,3],[21,22,23],[31,32,33]];
+
+      document.getElementById('wrapTable').innerHTML = str;
+
+      var table = document.createElement('table');
+      var tr = document.createElement('tr');
+      var td = document.createElement('td');
+
+      tr.appendChild(td);
+      table.appendChild(tr);
+
+      tr.addEventListener('mouseover|mouseout')
+
+      //$('.hack_select_input').get(0)
 
     </h2>
     <h3>将上述的表格扩展到1000行</h3>
