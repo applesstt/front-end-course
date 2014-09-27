@@ -5,13 +5,39 @@
   <link rel="stylesheet" href="css/common.css" />
   <style type="text/css">
   /* add css code here */
+    .grid_border_wrap div {
+      border: 1px solid #333;
+      margin-top: -1px;
+      position: relative;
+      z-index: 1;
+    }
+    .grid_border_wrap div:first-child {
+      margin-top: 0;
+    }
+    .grid_border_wrap div:hover {
+      border-color: #f00;
+      z-index: 2;
+    }
+    .header {
+      background-color: #fff;
+      height: 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .bg {
+      padding-top: 30px;
+      background: #c0deed url(image/html6/bg.png) repeat-x 0 30px fixed;
+    }
   </style>
   <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
   <script>
   /* add javascript code here */
   </script>
 </head>
-<body>
+<body class="bg">
+<div class="header"></div>
 <div class="p10">
   <p>
     <h1>1. 将下列div增加边框 鼠标划过时边框变色</h1>
@@ -33,10 +59,10 @@
     <div>
       <img src="image/html6/tweet.png" />
     </div>
-    <div>
+    <div style="background-color:#fff;padding:10px 10px 10px 63px;">
       <div>
-        <a href="https://twitter.com/liudimouse">
-          <img src="image/html6/liudi.jpeg" width="48" height="48" />
+        <a style="position:relative;" href="https://twitter.com/liudimouse">
+          <img style="position:absolute;left:-53px;" src="image/html6/liudi.jpeg" width="48" height="48" />
           <strong>刘荻</strong>
           <span></span>
           <b>@liudimouse</b>
@@ -52,7 +78,37 @@
     <div>
       <img src="image/html6/facebook_deng.png" />
     </div>
-    <div></div>
+    <style>
+      .tip_wrap {
+        background: url(image/html6/deng.jpg) no-repeat 0 -20px;
+        height: 150px;
+        position: relative;
+        margin-top: 20px;
+      }
+      .tip_arrow {
+        height: 20px;
+        width: 20px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -10px;
+        left: 140px;
+        overflow: hidden;
+      }
+      .tip_arrow_inner {
+        height: 40px;
+        width: 40px;
+        transform: rotate(-45deg);
+        background: url(image/html6/deng.jpg) no-repeat -130px 0;
+        top: -10px;
+        left: -10px;
+        position: absolute;
+      }
+    </style>
+    <div class="tip_wrap">
+      <div class="tip_arrow">
+        <div class="tip_arrow_inner"></div>
+      </div>
+    </div>
   </p>
 </div>
 </body>
