@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/common.css" />
+  <style type="text/css">
+  /* add css code here */
+  .zi_top, .zi_bottom {
+    width: 100px;
+  }
+  .zi_top {
+    height: 50px;
+  }
+  .zi_bottom {
+    margin-top: -25px;
+  }
+  .zi_green, .zi_red, .zi_blue {
+    width: 100px;
+    height: 50px;
+    display: block;
+  }
+  .zi_green {
+    background-color: #66ff66;
+  }
+  .zi_red {
+    background-color: #ff6666;
+  }
+  .zi_blue {
+    background-color: #6666ff;
+  }
+
+  .my_input {}
+  .my_text {
+    border: 1px solid #cccccc;
+  }
+  </style>
+  <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
+  <script>
+  /* add javascript code here */
+  </script>
+</head>
+<body>
+<div class="p10">
+  <p>
+    <h1>1. z-index使用场景</h1>
+    <h2>调整下面几个色块的层级显示</h2>
+    <div class="zi">
+      <div class="zi_top">
+        <div class="zi_green"></div>
+      </div>
+      <div class="zi_bottom">
+        <div class="zi_red"></div>
+        <div class="zi_blue"></div>
+      </div>
+    </div>
+  </p>
+  <p>
+    <h1>2. input的样式应用</h1>
+    <h2>调整出一个理想的input样式</h2>
+    <p>
+      <input type="text" class="my_input" />
+    </p>
+  </p>
+  <p>
+    <h1>3. 调整下面的文字格式 (文字显示区域：500px*150px)</h1>
+    <div class="my_text">
+      Starting with bootstrap-sass v3.1.1.1, due to the structural changes from upstream you will need these
+      backported asset pipeline gems on Rails 3.2. There is more on why this is necessary in
+      https://github.com/twbs/bootstrap-sass/issues/523 and https://github.com/twbs/bootstrap-sass/issues/578.
+    </div>
+  </p>
+</div>
+</body>
+</html>
