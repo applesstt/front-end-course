@@ -33,6 +33,10 @@
   .my_text {
     border: 1px solid #cccccc;
   }
+  textarea {
+    width: 300px;
+    height: 200px;
+  }
   </style>
   <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
   <script>
@@ -69,6 +73,89 @@
       https://github.com/twbs/bootstrap-sass/issues/523 and https://github.com/twbs/bootstrap-sass/issues/578.
     </div>
   </p>
+  <textarea>
+    function foo ( ) {
+    var a = b = 0 ;
+    // body...
+    }
+  </textarea>
+  <textarea>
+    myName = "global" ;
+
+    function foo ( ) {
+    alert ( myName ) ;
+    var myName = "local" ;
+    alert ( myName ) ;
+    }
+
+    foo ( ) ;
+  </textarea>
+  <textarea>
+    if ( ! ( "a" in window ) ) {
+    var a = 1 ;
+    }
+
+    alert ( a ) ;
+  </textarea>
+  <textarea>
+    alert ( typeof foo );
+
+    function foo ( ) {
+    // body...
+    }
+  </textarea>
+  <textarea>
+    alert ( typeof foo ) ;
+
+    var foo = function ( ) {
+    // body...
+    } ;
+  </textarea>
+  <textarea>
+    function test ( ) {
+    alert ( "1" ) ;
+    }
+
+    test ( ) ;
+
+    function test ( ) {
+    alert ( "2" ) ;
+    }
+
+    test ( ) ;
+  </textarea>
+  <textarea>
+    var bar = function foo ( ) {
+    foo ( );
+    } ;
+
+    foo ( );
+  </textarea>
+  <textarea>
+    function foo ( x ) {
+    alert ( x ) ;
+    } ( 1 ) ;
+  </textarea>
+  <textarea>
+    var bar = function foo ( x ) {
+    alert ( x ) ;
+    } ( 1 ) ;
+  </textarea>
+  <textarea>
+    ( function foo ( x ) {
+    alert ( x ) ;
+    } ) ( 1 ) ;
+  </textarea>
+  <textarea>
+    var links = document.getElementsByTagName( "a" ) ;
+
+    for ( var i = 0 , l = links . length ; i < l ; i ++ ) {
+      links [ i ] . onclick = function ( e ) {
+        e . preventDefault ( ) ;
+        alert ( "You click link #" + i ) ;
+      }
+    }
+  </textarea>
 </div>
 </body>
 </html>
