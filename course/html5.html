@@ -2,9 +2,32 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style type="text/css">
+    @-webkit-keyframes zhuan {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+    }
+    .sex {
+      -webkit-animation: zhuan 1s linear infinite ;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: #ff6666;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
 </head>
 <body>
   <div class="wrap">
+    <div class="sex" id="sex">test</div>
+    <script>
+
+      var elem = document.getElementById('sex');
+      elem.addEventListener('click', function() {
+        alert('You clicked ' + elem.tagName);
+      });
+    </script>
     <h1>文字倾斜</h1>
     <ul>
       <li>请制作一个文字区域 鼠标划过后 文字顺时针360度旋转一圈</li>

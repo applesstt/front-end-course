@@ -15,6 +15,9 @@
     var a = b = 0 ;
     // body...
     }
+    foo();
+    alert(a);
+    alert(b);
   </textarea>
   <textarea>
     myName = "global" ;
@@ -92,6 +95,13 @@
         alert ( "You click link #" + i ) ;
       }
     }
+  </textarea>
+  <textarea>
+    var foo = function bar() {
+      alert(bar);
+    }
+    foo();
+    alert(bar);
   </textarea>
 </div>
 </body>

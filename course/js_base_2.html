@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/common.css" />
+  <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
+  <script>
+  /* add javascript code here */
+  </script>
+</head>
+<body>
+<p>
+  <h1>事件注册</h1>
+  <h2>请使用原生的js为下面两个连接增加点击事件，点击时弹出‘you click me!'</h2>
+  <h2>修改绑定的点击事件，为响应的事件增加一个index参数，点击时弹出‘you click no 1/2!'</h2>
+  <div id="link_wrap" class="p10">
+    <a href="javascript:{}">link_1</a>
+    <a href="javascript:{}">link_2</a>
+  </div>
+</p>
+<p>
+  <h1>捕捉、冒泡事件</h1>
+  <h2>为下面的div和a分别增加一个click事件，弹出‘you click a div' and ‘you click a link’</h2>
+  <h2>点击link，先弹出link，然后弹出div</h2>
+  <h2>点击link，先弹出div，然后弹出link</h2>
+  <h2>点击link，只弹出link</h2>
+  <div class="p10">
+    <div id="pop_wrap">this is a <a href="javascript:{}" id="pop_link">link</a></div>
+  </div>
+</p>
+</body>
+</html>
