@@ -10,10 +10,51 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="http://cdn.staticfile.org/normalize/3.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="css/common.css" />
+  <!--<link rel="stylesheet" href="css/common.css" />-->
+  <style>
+    .wrap {
+      width: 100%;
+    }
+    .col {
+      width: 25%;
+      line-height: 3em;
+      text-align: center;
+      float: left;
+    }
+    .sub-col {
+      width: 100%;
+    }
+    .col img {
+      max-width: 100%;
+    }
+    .wrap .col:nth-child(2n) {
+      background-color: #ff3333;
+    }
+    .wrap .col:nth-child(2n+1) {
+      background-color: #33ff33;
+    }
+    @media screen and (max-width: 640px) {
+      .col {
+        width: 50%;
+      }
+    }
+  </style>
   <script src="http://cdn.staticfile.org/modernizr/2010.07.06dev/modernizr.min.js"></script>
 </head>
-<body>
+<body class="p10">
+  <div class="wrap">
+    <div class="col">
+      <div class="sub-col">
+        <img src="http://g-ec4.images-amazon.com/images/G/28/shazam/Depend-12-8-12-12-R2-V2-1xVmnZ._V319713852_.jpg" />
+      </div>
+      <div class="sub-col">test</div>
+      <div class="sub-col">test</div>
+      <div class="sub-col">test</div>
+    </div>
+    <div class="col">col 2</div>
+    <div class="col">col 3</div>
+    <div class="col">col 4</div>
+  </div>
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -35,6 +76,15 @@
         <li>自适应图片</li>
       </ol>
     </p>
+    <div style="font-size:1em;">
+      test 1
+      <div style="font-size:2em;">
+        test 2
+        <div style="font-size:1em;">
+          test 3
+        </div>
+      </div>
+    </div>
   </article>
   <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.js"></script>
 </body>
